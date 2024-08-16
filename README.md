@@ -6,7 +6,7 @@ Required packages (Debian/Ubuntu copy/paste):
 ```bash
 sudo apt install build-essential make gcc-riscv64-unknown-elf qemu-system-misc
 ```
-<br/>
+
 The following is a list of rules in the Makefile:
 ```bash
 # Compile and link all source files into 'vos.elf'
