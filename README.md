@@ -1,21 +1,17 @@
 ## VOS
-VOS (RISC-**V** **O**perating **S**ystem) is an "operating system" designed for QEMU's RISC-V "virt" machine. It may not do much, but it is mostly a proof-of-concept and practice in something closer to embedded systems than what I have previously looked into
+VOS (RISC-**V** **O**perating **S**ystem) is an "operating system" designed for QEMU's RISC-V `virt` machine. It may not do much, but it is mostly a proof-of-concept and practice in something closer to embedded systems than what I have previously looked into
 
 ## Build & Run
-Required packages (Debian/Ubuntu):
+Required packages (Debian/Ubuntu copy/paste):
 ```
-build-essential
-make
-qemu
-gcc-riscv64-unknown-elf
-qemu-system-misc
+sudo apt install build-essential make gcc-riscv64-unknown-elf qemu-system-misc
 ```
 
 The following is a list of rules in the Makefile:
 ```
-# Compile and link all source files into vos.elf
+# Compile and link all source files into 'vos.elf'
 make all
-# Executes 'all' and opens an instance of qemu-system-riscv64 with the '-bios' flag pointing to vos.elf
+# Executes 'all' and opens an instance of qemu-system-riscv64 running 'vos.elf'
 make run
 ```
 
